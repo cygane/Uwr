@@ -1,0 +1,13 @@
+.root-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    position: sticky;
+    place-items: flex-start;
+    top: 0;
+    z-index: 1000; 
+}
+

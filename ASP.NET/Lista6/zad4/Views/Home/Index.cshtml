@@ -1,0 +1,16 @@
+﻿@{
+    Layout = ViewData["Layout"] as string;
+}
+
+
+<h2>Current Minute: @DateTime.Now.Minute</h2>
+<p>This is a test page. The layout will change based on whether the minute is even or odd.</p>
+
+<!-- Renderowanie widoku częściowego -->
+@Html.Partial("_LoginPartial")
+
+
+@section CustomSection
+{
+    <p>This is custom content that appears only when the section is defined.</p>
+}

@@ -1,0 +1,34 @@
+<!-- Views/Shared/_OddMinuteLayout.cshtml -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - Odd Minute Layout</title>
+    <style>
+        body {
+            background-color: lightgreen;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome! This is the Odd Minute Layout</h1>
+    </header>
+    
+    <div>
+        @RenderBody()
+    </div>
+
+    @if (IsSectionDefined("CustomSection"))
+    {
+        <div class="custom-section">
+            @RenderSection("CustomSection", required: false)
+        </div>
+    }
+   
+    <footer>
+        <p>Even Minute Layout - Footer</p>
+    </footer>
+ 
+</body>
+</html>

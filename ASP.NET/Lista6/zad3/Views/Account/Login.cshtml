@@ -1,0 +1,16 @@
+@using zad3.HtmlHelperExtensions
+@model LoginViewModel
+
+<h1>Logowanie</h1>
+<!-- Wariant 1: Wiązanie nazw pól tekstowych wprost -->
+<form method="post">
+    @Html.Login("UserName", "Password")
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+<br />
+<!-- Wariant 2: Wiązanie przez składowe modelu -->
+<form method="post">
+    @Html.LoginFor(m => m.UserName, m => m.Password)
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>

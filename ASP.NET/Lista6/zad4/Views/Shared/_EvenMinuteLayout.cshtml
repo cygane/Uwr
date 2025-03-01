@@ -1,0 +1,35 @@
+<!-- Views/Shared/_EvenMinuteLayout.cshtml -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - Even Minute Layout</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome! This is the Even Minute Layout</h1>
+    </header>
+    
+    <div>
+        @RenderBody()
+    </div>
+    
+    @if (IsSectionDefined("CustomSection"))
+    {
+        <div class="custom-section">
+            @RenderSection("CustomSection", required: false)
+        </div>
+    }
+    
+    <footer>
+        <p>Even Minute Layout - Footer</p>
+    </footer>
+    
+   
+</body>
+</html>

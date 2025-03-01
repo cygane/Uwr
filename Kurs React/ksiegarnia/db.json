@@ -1,0 +1,67 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "tytul": "Pan Tadeusz",
+      "autor": "Adam Mickiewicz",
+      "rokWydania": "1834",
+      "liczbaKopii": 5,
+      "cena": 25.99,
+      "gatunek": "Poem"
+    },
+    {
+      "id": 2,
+      "tytul": "Lalka",
+      "autor": "Bolesław Prus",
+      "rokWydania": "1890",
+      "liczbaKopii": 3,
+      "cena": 30.5,
+      "gatunek": "Novel"
+    },
+    {
+      "id": 3,
+      "tytul": "Quo Vadis",
+      "autor": "Henryk Sienkiewicz",
+      "rokWydania": "1896",
+      "liczbaKopii": 7,
+      "cena": 35.75,
+      "gatunek": "Historical"
+    },
+    {
+      "id": 4,
+      "tytul": "Ferdydurke",
+      "autor": "Witold Gombrowicz",
+      "rokWydania": "1937",
+      "liczbaKopii": 4,
+      "cena": 22.4,
+      "gatunek": "Novel"
+    },
+    {
+      "id": 5,
+      "tytul": "Solaris",
+      "autor": "Stanisław Lem",
+      "rokWydania": "1961",
+      "liczbaKopii": "20",
+      "cena": "45.3",
+      "gatunek": "Historical"
+    },
+    {
+      "id": 6,
+      "tytul": "asdf",
+      "autor": "sxdfg",
+      "rokWydania": "2024",
+      "liczbaKopii": "1234",
+      "cena": "123",
+      "gatunek": "Novel"
+    },
+    {
+      "id": 7,
+      "tytul": "testy",
+      "autor": "sdfgh",
+      "rokWydania": "1976",
+      "liczbaKopii": "6",
+      "cena": "89",
+      "gatunek": "Poem"
+    }
+  ]
+}
