@@ -5,6 +5,7 @@ from collections import deque
 # kazdy stan przepisuje na unikalny kod, zeby mozna bylo oznaczyc jako odwiedzony w bfs
 # utrzymuje tablice father, to pozniejszego backtracka dla trybu debug
 
+# python3 validator.py zad1 python3 zad1.py
 L = 8
 N = 4 * (L * L) * (L * L) * (L * L) + 5
 WHITE, BLACK = True, False
@@ -102,7 +103,7 @@ def backtrack_path(end_id):
     path = []
     while father[end_id] != end_id:
         path.append(end_id)
-        end_idx = father[end_id]
+        end_id = father[end_id]
     path.append(end_id)
     path.reverse()
 

@@ -45,6 +45,6 @@ ppb = symuluj(1000)
 print(f"Szansa Blotkarza na zwycięstwo: {ppb:.2%}")
 
 
-talia = [ 8, 9, 10] * 4  
+talia = [8, 9, 10] * 4  
 ppb_2 = symuluj(1000, talia)
 print(f"Szansa Blotkarza na zwycięstwo (ulepszona talia): {ppb_2:.2%}")
