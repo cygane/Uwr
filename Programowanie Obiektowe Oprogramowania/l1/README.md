@@ -124,3 +124,87 @@ classDiagram
     Kuponrabatowy --|> Zamówienie : stosowany
 	Produkt --|> Recenzja : posiada
 ```
+
+```mermaid
+classDiagram
+    class Klient {
+        +ID: int
+        +Imię: string
+        +Nazwisko: string
+        +Email: string
+        +zaloguj(): void
+        +zarejestruj(): void
+        +złóżZamówienie(): Zamówienie
+    }
+    class Zamówienie {
+        +Numer: int
+        +Data: date
+        +Status: string
+        +dodajProdukt(Produkt): void
+        +usuńProdukt(Produkt): void
+        +zakończZamówienie(): void
+    }
+    class Produkt {
+        +ID: int
+        +Nazwa: string
+        +Cena: float
+        +Opis: string
+        +zmieńCenę(nowaCena: float): void
+        +aktualizujOpis(nowyOpis: string): void
+    }
+    class Koszyk {
+        +ID: int
+        +Data_utworzenia: date
+        +dodajProdukt(Produkt): void
+        +usuńProdukt(Produkt): void
+        +opróżnijKoszyk(): void
+    }
+    class Płatność {
+        +ID: int
+        +Typ: string
+        +Status: string
+        +przetwórzPłatność(): boolean
+    }
+    class Dostawa {
+        +ID: int
+        +Adres: string
+        +Przewoźnik: string
+        +NumerŚledzenia: string
+        +śledźPaczke(): string
+    }
+    class Magazyn {
+        +ID: int
+        +Lokalizacja: string
+        +dodajProdukt(Produkt): void
+        +usuńProdukt(Produkt): void
+    }
+    class Administrator {
+        +ID: int
+        +Login: string
+        +edytujProdukt(Produkt): void
+    }
+    class Recenzja {
+        +ID: int
+        +Ocena: int
+        +Komentarz: string
+    }
+    class Kuponrabatowy {
+        +Kod: string
+        +Zniżka: float
+        +DataWażności: date
+        +zastosuj(Zamówienie): void
+    }
+
+    Klient "1" -- "0..*" Zamówienie 
+    Zamówienie "1" -- "1..*" Produkt 
+    Produkt "1" -- "0..*" Koszyk 
+    Koszyk "1" -- "1" Klient 
+    Zamówienie "1" -- "1" Płatność 
+    Płatność "1" -- "1" Zamówienie 
+    Dostawa "1" -- "1" Zamówienie 
+    Magazyn "1" -- "0..*" Produkt 
+    Administrator "1" -- "0..*" Produkt 
+    Klient "1" -- "0..*" Recenzja 
+    Produkt "1" -- "0..*" Recenzja 
+    Kuponrabatowy "0..1" -- "1" Zamówienie 
+```
