@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="card">
+        <header class="card__header">
+            <h1>Contact Form</h1>
+        </header>
+        <form method="post" class="card__body">
+            <div class="group">
+                <div class="card__item"> 
+                    <label for="first_name">
+                        First Name*
+                        <input
+                        type="text"
+                        id="first_name"
+                        name="first_name"
+                        autocomplete="first_name  "
+                        required
+                        minlength="3"
+                        />
+                    </label>
+                </div>
+                <div class="card__item">
+                    <label for="last_name">
+                        Last Name*
+                        <input
+                        type="text"
+                        id="last_name"
+                        name="last_name"
+                        autocomplete="last_name"
+                        required
+                        minlength="3"
+                        />
+                    </label>
+                </div>
+            </div>
+            <div class="card__item">
+                <label>
+                Email*
+                <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"
+                />
+                </label>
+            </div>
+            <div class="card__item">
+                <label for="phone">
+                    Phone
+                    <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    autocomplete="phone"
+                    pattern="[0-9]{9}"
+                    />
+                </label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" />
+                <label>
+                    Subscribe to newslettter
+                </label> 
+            </div>
+            <div class="card__item">
+                <label>
+                    Reason for Contact*
+                    <select name="reason" id="reason">
+                        <option value="support">Customer Support</option>
+                        <option value="sales">Sales Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </div>
+            <div class="card__item">
+                <label>
+                    Message*
+                    <textarea
+                    name="textarea"
+                    required
+                    >
+                    </textarea>
+                </label>
+            </div>
+    
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

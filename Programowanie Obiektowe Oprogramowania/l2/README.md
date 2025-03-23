@@ -218,15 +218,3 @@ Na podstawie kodu, mozna narysowac precyzyjny diagram. Wynika to z tego, ze mamy
 
 Kod na podstawie diagramu sekwencji
 ![Moje zdjęcie](./zad7.png)
-
-```
-Student.show()
-UsosWebPage.getStudentGradeInfo()
-GradeController.getCourse()
-
-for each course in student.getCourses():
-    mark = course.getMark(student)
-    value = mark.getValue()
-
-webPage.pageLayout()
-```
