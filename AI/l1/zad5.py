@@ -7,8 +7,7 @@ import random
 # naprawianie kolumny oraz wiersza robimy liczac za pomoca sum prefiksowych i wybieramy to d miejsc, ktore bedzie mialo najmniej zmian
 # zapisujemy gdzie sie te d miejsc konczy, zeby potem zmienic obrazek
 
-R = 7
-C = 7
+
 picture = np.array([[0] * R] * C)
 row_val = [0] * R
 col_val = [0] * C

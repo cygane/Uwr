@@ -4,7 +4,7 @@
 Prosta sprawdzarka. Przykady użycia:
 
 1. uruchomienie wszystkich testów dla danego zadania:
-python validator.py zad1 python rozwiazanie.py
+python3 validator.py zad1 python3 zad1.py
 
 2. uruchomienie wybranych testów
 python validator.py --cases 1,3-5 zad1 a.out
