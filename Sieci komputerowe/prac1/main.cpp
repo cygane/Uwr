@@ -1,4 +1,3 @@
-// Julia Cygan 338682
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
